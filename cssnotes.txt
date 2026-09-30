@@ -1,0 +1,15 @@
+Types of elements===
+1 Block / 2 Inline
+
+==========================
+
+CSS ===> Cascading Style Sheet
+Internal / Inline /  External
+
+CSS Selectors ==>
+    element 
+    global
+    class 
+    id
+    child
+    psedou
