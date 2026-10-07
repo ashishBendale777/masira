@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100dvh;
+            width: 100%;
+        }
+
+        .container {
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+        
+        img {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .info-container {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(123, 72, 72, 0.5);
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .info-container h1 {
+            font-size: 4rem;
+        }
+
+        .info-container p {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .info-container button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background-color: red;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+        <div class="container">
+            <img src="images/banner.jpg" alt="">
+            <div class="info-container">
+                <h1>Welcome To Website</h1>
+                <p>This is a simple transparent banner.</p>
+                <button>Get Started</button>
+            </div>
+        </div>
+</body>
+
+</html>
