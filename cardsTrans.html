@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container {
+            height: 80%;
+            width: 80%;
+            /* background-color: blue; */
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-item {
+            height: 69%;
+            flex-grow: 1;
+            background-color: green;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            
+        }
+
+        .text-content {
+            width: 100%;
+            padding: 20px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transform: translateY(100%);
+            transition: all 1.5s ease-in;
+        
+        }
+
+        .text-content h1 {
+            text-align: center;
+            font-size: 2rem;
+        }
+        .text-content p {
+            text-align: justify;
+            font-size: 1rem;
+        }
+
+        .card-item:hover .text-content {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card-item">
+            <div class="text-content">
+                <h1>Jungle</h1>
+                <p>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Quisquam, quod.
+                </p>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="text-content">
+                <h1>Jungle</h1>
+                <p>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Quisquam, quod.
+                </p>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="text-content">
+                <h1>Jungle</h1>
+                <p>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Quisquam, quod.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
