@@ -74,6 +74,55 @@
         .book-item {
             background-color: red;
         }
+
+
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 24px;
+            padding: 24px;
+        }
+
+        .team-card {
+            width: 220px;
+            padding: 24px;
+            background-color: white;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        /* Horizontal offset | Vertical offset | Blur | Spread | Color */
+        .card-one {
+            box-shadow: 6px 6px 22px 6px gray;
+        }
+
+        /* Negative offsets place the shadow toward the top and left */
+        .card-two {
+            box-shadow: -6px -6px 12px 2px lightblue;
+        }
+
+        /* Inset creates a shadow inside the card */
+        .card-three {
+            box-shadow: inset 0px 0px 16px 3px gray;
+        }
+
+        /* Multiple shadows are separated by a comma */
+        .card-four {
+            box-shadow: 5px 5px 12px 0px lightblue,
+                -5px -5px 12px 0px pink;
+        }
+
+        .team-card h2 {
+            margin-bottom: 12px;
+
+            /* Horizontal offset | Vertical offset | Blur | Color */
+            text-shadow: 2px 2px 3px lightgray;
+        }
+
+        .team-card p {
+            color: #555;
+        }
     </style>
 </head>
 
@@ -110,12 +159,12 @@
             <div class="book-item">
                 <p>Book 5</p>
             </div>
-            
+
             <div class="book-item">
                 <p>Book 6</p>
             </div>
 
-            
+
             <div class="book-item">
                 <p>Book 7</p>
             </div>
@@ -136,6 +185,27 @@
     <section id="team">
         <h1>Team</h1>
 
+        <div class="team-container">
+            <div class="team-card card-one">
+                <h2>Ashish</h2>
+                <p>Web Developer</p>
+            </div>
+
+            <div class="team-card card-two">
+                <h2>Priya</h2>
+                <p>UI Designer</p>
+            </div>
+
+            <div class="team-card card-three">
+                <h2>Rahul</h2>
+                <p>Backend Developer</p>
+            </div>
+
+            <div class="team-card card-four">
+                <h2>Neha</h2>
+                <p>Project Manager</p>
+            </div>
+        </div>
     </section>
 
     <footer>
